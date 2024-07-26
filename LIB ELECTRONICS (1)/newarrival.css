@@ -1,0 +1,19 @@
+
+.navbar {
+    padding: 20px 0; 
+}
+
+.navbar-brand {
+    font-size: 23px;
+    
+}
+
+.navbar-nav .nav-link {
+    padding: 15px 20px;
+    font-size: 17px; 
+}
+.new{
+    color: #3e3ea1;
+    text-shadow: 1px 1px 1px black;
+    font-size: 29px;
+}

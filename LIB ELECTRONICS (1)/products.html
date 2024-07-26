@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+    <link rel="stylesheet" href="style.css">
+
+ 
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+H2O5Xr0Xo51PQe7fWSMIIZ+D6yzfLMlEyLZyNBpjV4+fmjhX1sVaXJjlw" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<style>
+  .btn-real{
+   background-color:  #505077;
+   color: white;
+  }
+
+  #navbar {
+  background-color: rgb(80, 84, 122);
+}
+
+
+</style>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <img src="sign.png" alt="" width="60px" height="40px">
+      <a class="navbar-brand" href="home.html" id="logo"><span id="span1">LIBERTY ELECTRONICS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="" alt="" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <li><a class="dropdown-item" href="refrigerators.html">Refrigerators</a></li>
+              <li><a class="dropdown-item" href="washingmachines.html">Washing Machines</a></li>
+              <li><a class="dropdown-item" href="smartphones.html">Samrt Phone</a></li>
+              <li><a class="dropdown-item" href="ovens.html">Ovens</a></li>
+              <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+             
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newarrival.html" style="color: yellow;">New Arrivals</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+      <a href="home.html">
+        <i class="fa-solid fa-house" id="icon"></i>
+      </a>
+      
+      <a href="contact.html">
+        <i class="fa-solid fa-phone" id="icon"></i>
+      </a>
+      
+      <a href="products.html">
+        <i class="fa-solid fa-cart-shopping" id="icon" style="margin-top: 2px;"></i>
+      </a>
+      
+
+    </div>
+  </nav>
+
+  <script>
+    function myfunction()
+       {
+         
+          window.alert("Product added successfully");
+      }
+     
+  </script>
+
+   
+<style>
+  #icon{
+     color: white;
+     margin-left:20px;
+     text-align: right;
+     font-size: 24px;
+
+   }
+</style>
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="container-fluid">
+    <div class="carousel-inner mt-2">
+      <div class="carousel-item active">
+        <img src="images/24.jpg" class="d-block w-100" alt="..." height="400px" width="50px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>NEW ARRIVAL</h5>
+          <p>The latest laptop combines cutting-edge performance with stunning portability, redefining productivity on the go.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/opp1.jpg" class="d-block w-100" alt="..." height="400px" width="50px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>NEW ARRIVAL</h5>
+          <p>The new smartphone dazzles with its sleek design and innovative features, setting a new standard for excellence.
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+
+  <div class="container-fluid">
+   
+    <div class="row">
+  <div class="col-md-8 offset-md-2">
+<hr>
+  </div>
+  <div class="row">
+  <div class="col-md-3 mt-2">
+      <div class="card">
+          <img src="images/samm2.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+          <div class="card-body text-center">
+              <h4 class="card-title">SMART PHONE</h4>
+              <p class="card-text">Realme Narzo N53 - a powerful and stylish smartphone</p>
+              <div class="price">24,000RS</div>
+              <button   onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="col-md-3 mt-2">
+    <div class="card">
+        <img src="product1pic/7.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+        <div class="card-body text-center">
+            <h4 class="card-title">OVENS</h4>
+            <p class="card-text">Microwave Oven with Grill SMW 5220</p>
+            <div class="price">45,000RS</div>
+            <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+        </div>
+    </div>
+</div>
+ 
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/13.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">LAPTOPS</h4>
+          <p class="card-text">Lenovo Slim 3 intel core i3 10th Gen Laptop</p>
+          <div class="price">128,800RS <span>240,000</span></div>
+          <button   onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/20.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">REFRIGERATORS</h4>
+          <p class="card-text">SAMSUNG Side by Side Refrigerator 663Liter 24Cft</p>
+          <div class="price">288,800RS <span>300,000</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/6.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">OVENS</h4>
+          <p class="card-text">Samsung MS28F303TAS/EG Mikrowelle / 1000 W / 28 L Garraum (Extra groß) / 51,2 cm Breite</p>
+          <div class="price">50,000RS</div>
+          <button   onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/14.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">LAPTOPS</h4>
+          <p class="card-text">Huawei refreshes MateBook D 14 and MateBook D 15 laptops</p>
+          <div class="price">288,800RS <span>289,000</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="smartphones/666666.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">SMART PHONE</h4>
+          <p class="card-text"> Samsung Galaxy Z fold3 
+            NEW ARRIVAL Available in more colors </p>
+          <div class="price">32,000RS</div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/17.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">REFRIGERATORS</h4>
+          <p class="card-text">Samsung Family Hub French Door Refrigerator</p>
+          <div class="price">280,000RS</span></div>
+          <button  onclick="myfunction()" class="btn btn-real  mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/23.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">REFRIGERATORS</h4>
+          <p class="card-text">DAWLANCE Side by Side Refrigeratoe 663Liter 24Cft</p>
+          <div class="price">146,800RS</span></div>
+          <button   onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/24.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">LAPTOPS</h4>
+          <p class="card-text">Newest 7th-gen Intel Core i7 processor 15-Inches Full HD Display</p>
+          <div class="price">288,800RS <span>289,000</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/22.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">WASHING MACHINES</h4>
+          <p class="card-text">Samsung's Front load electric W.Machine</p>
+          <div class="price">288,800RS <span>289,000</span></div>
+          <button   onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/5.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">SMART PHONES</h4>
+          <p class="card-text">IPHONE 14 PRO MAX</p>
+          <div class="price">450,000RS <span>499,999</span></div>
+          <button   onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/8.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">OVENS</h4>
+          <p class="card-text">MD 20 INV Heating Microwave Oven</p>
+          <div class="price">23,000RS</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/19.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">WASHING MACHINES</h4>
+          <p class="card-text">Single Tub Washing Machine WHTTE</p>
+          <div class="price">288,800RS <span>289,000</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1 " id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/4.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">SMART PHONES</h4>
+          <p class="card-text">Apple iPhone XS Max - 64GB - Silver </p>
+        <div class="price">110,000RS</div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/9.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">OVENS</h4>
+          <p class="card-text">DW 295 Heating Microwave Oven Type</p>
+          <div class="price">41,000RS</div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/3.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">SMART PHONES</h4>
+          <p class="card-text"> The Glaxy A51 IPHONE SE Fighter</p>
+          <div class="price">33,256RS</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/15.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">LAPTOPS</h4>
+          <p class="card-text">Huawei MateBook XPRO Best Laptop</p>
+          <div class="price">200,000RS</div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/11.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">OVENS</h4>
+          <p class="card-text">Electric oven, Samsung</p>
+          <div class="price">31,000RS</span></div>
+          <button  onclick="myfunction()"  class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-3 mt-2">
+  <div class="card">
+      <img src="product1pic/2.jpg" alt="cakes" class="card-img-top" style="height:250px;">
+      <div class="card-body text-center">
+          <h4 class="card-title">SMART PHONE</h4>
+          <p class="card-text">Real me C33</p>
+          <div class="price">29,000RS</span></div>
+          <button  onclick="myfunction()" class="btn btn-real mt-1" id="addToCartBtn">Add to cart</button>
+      </div>
+  </div>
+</div>
+
+
+
+  </div>
+  
+  </div>
+  </div>
+
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+
+        function search() {
+        var filter = document.getElementById('find').value.toUpperCase();
+        let item = document.querySelectorAll('.col-md-3');
+        let l = document.getElementsByTagName('h4');
+        for (var i=0; i < l.length; i++){
+            var a = item[i].getElementsByTagName('h4')[0];
+            var value = a.innerHTML || a.innerText || a.textContent;
+
+            if (value.toUpperCase().indexOf(filter) >-1) {
+                item[i].style.display = "";
+            }
+            else{
+                item[i].style.display ="none";
+            }
+        }
+
+        }
+   
+</script>
+
+<section class="footer">
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Liberty Electronics</h3>
+            <p>
+              Karachi <br>
+              Sindh <br>
+              Pakistan <br>
+            </p>
+            <strong>Phone:</strong>  +923353994794 <br>
+            <strong>Email:</strong>Libertyelectronics@.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+           <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="newarrival.html">New Arrivalss</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+             </ul>
+          </div>
+
+
+
+         
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+           <ul>
+            <li><a href="refrigerators.html">Refrigerators</a></li>
+            <li><a href="washingmachines.html">Washing Machines</a></li>
+            <li><a href="smartphones.html">Smart Phones</a></li>
+            <li><a href="ovens.html">Ovens</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+           </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+           
+
+     <div class="socail-links mt-3">
+              <a href="https://www.facebook.com/TwitterInc/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.skype.com/en/"><i class="fa-brands fa-skype"></i></a>
+              <a href="https://pk.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Liberty Electronic </span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+</section>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW ARRIVALS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newarrival.css">
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+H2O5Xr0Xo51PQe7fWSMIIZ+D6yzfLMlEyLZyNBpjV4+fmjhX1sVaXJjlw" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+
+  </head>
+
+<style>
+  .btn-real{
+   background-color:  #505077;
+   color: white;
+  }
+</style>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <img src="sign.png" alt="" width="60px" height="40px">
+      <a class="navbar-brand p-1 " href="home.html" id="logo"><span id="span1">LIBERTY ELECTRONICS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="./images/menu.png" alt="" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <li><a class="dropdown-item" href="refrigerators.html">Refrigerators</a></li>
+              <li><a class="dropdown-item" href="washingmachines.html">Washing Machines</a></li>
+              <li><a class="dropdown-item" href="smartphones.html">Samrt Phone</a></li>
+              <li><a class="dropdown-item" href="ovens.html">Ovens</a></li>
+              <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+             
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      <a href="home.html">
+        <i class="fa-solid fa-house" id="icon"></i>
+      </a>
+      
+      <a href="contact.html">
+        <i class="fa-solid fa-phone" id="icon"></i>
+      </a>
+      
+      <a href="products.html">
+        <i class="fa-solid fa-cart-shopping" id="icon" style="margin-top: 2px;"></i>
+      </a>
+      
+    </div>
+  </nav>
+
+ 
+ 
+  <style>
+      .product-card {
+          position: relative;
+          margin-bottom: 20px;
+      }
+  
+      .product-card:hover .description-overlay {
+          opacity: 1;
+      }
+  
+      .description-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+  
+      .description-content {
+          position: relative;
+          z-index: 1;
+      }
+  
+      .description-content h2 {
+          margin-top: 0;
+      }
+  
+      .button {
+          text-align: center;
+      }
+  
+      .button a {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+  
+      .button a:hover {
+          background-color: #45a049;
+      }
+  
+      .product-img {
+          width: 100%;
+          height: auto;
+      }
+       
+      .product-card .price{
+        color: #19198d;
+      }
+      .product-card{
+        border: #19198d 1px solid;
+      }
+      #icon{
+         color: white;
+         margin-left:20px;
+         text-align: right;
+         font-size: 24px;
+   
+       }
+  </style>
+  </head>
+  <body>
+  
+          <div class="container-fluid">
+   
+            <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h3 class="new text-center mt-3">NEW ARRIVALS</h3>
+        <hr class="row mt-3">
+          </div>
+          <div class="row mt-5">
+          <div class="col-md-3 mt-2">
+              <div class="product-card">
+                  <img src="newarrival/1 (1).jpeg" alt="cakes" class="product-img" style="height:250px;">
+                  <div class="description-overlay">
+                      <h4 class="card-title">SMART PHONE</h4>
+                      <p class="card-text fs-4">Iphone 15 pro max september 2023, Colors Black , White, Blue Titanium,
+                        Chipset	Apple A17 Pro (3 nm)
+                        1290 x 2796 Pixels (~460 PPI)</p>
+                      <div class="price fs-1">499,000RS</div>
+                      <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+                  </div>
+              </div>
+          </div>
+        
+        
+          <div class="col-md-3 mt-2">
+            <div class="product-card">
+              <img src="newarrival/1 (10).jpeg" alt="cakes" class="product-img" style="height:250px;">
+              <div class="description-overlay">
+                  <h4 class="card-title">SMART PHONE</h4>
+                  <p class="card-text fs-4">Galaxy A05 Blackselected 
+                    Silverselected
+                    
+                    64 GB
+                    selected 
+                    128 GB (Number of Ratings :6)
+                    6.7" HD+ Display
+                    50MP Camera
+                    Octa core processor </p>
+                  <div class="price fs-1">32,800RS</div>
+                  <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+                </div>
+            </div>
+        </div>
+         
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+              <img src="newarrival/zflip.jpg" alt="cakes" class="product-img" style="height:250px;">
+                  <div class="description-overlay">
+                      <h4 class="card-title">SMART PHONE</h4>
+                      <p class="card-text fs-4"> Galaxy Z Flip4 5G 512GB 8GB RAM(GSM Only, No CDMA - not Compatible with Verizon/Sprint) - Purple (Renewed)</p>
+                      <div class="price fs-1">259,999RS</div>
+                      <button  onclick="myfunction()"  class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="smartphones/c11.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">SMART PHONE</h4>
+                <p class="card-text fs-4">Realme C11 JUNE 2021 8MP primary camera, f/2.0 aperture, 4P lens AF,4x digital zoom 2/4 GB RAM Blue in color</p>
+                <div class="price fs-1">26,499RS</div>
+                <button onclick="myfunction()"  class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/lap2.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">LAPTOP</h4>
+                <p class="card-text fs-4">Lenovo IdeaPad 5 14ABA7 features a 14-inch Full HD screen with an IPS 56.5Wh battery and provides a 65W USB-C </p>
+                <div class="price fs-1">121,000RS</div>
+                <button onclick="myfunction()"  class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/1 (6).jpeg" alt="cakes" class="product-img" style="height:250px;">
+                  <div class="description-overlay">
+                      <h4 class="card-title">LAPTOP</h4>
+                      <p class="card-text fs-4">HUAWEI MateBook D 14 2024 13th Gen Core features a 16-inch IPS 3:2 screen with 2520 x 1680 resolution, up to 12th-gen</p>
+                      <div class="price fs-1">110,000RS</div>
+                      <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+             
+              <img src="newarrival/lap3.jpg" alt="cakes" class="product-img" style="height:250px;">
+              <div class="description-overlay">
+                  <h4 class="card-title">LAPTOP</h4>
+                  <p class="card-text fs-4"> ASUS Zenbook Pro 16X OLED the latest Intel Core i9-12900H Processor partnered with an NVIDIA GeForce RTX 3060 GPU.</p>
+                  <div class="price fs-1">275,000RS</div>
+                  <button onclick="myfunction()"  class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/lap1.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title ">LAPTOP</h4>
+                <p class="card-text fs-4"> 13" WQHD Touch Display, Intel Core i7-10510U, 16GB RAM, 512GB SSD, Integrated Intel UHD Graphics, Detachable Eng-Arb KB, Windows 10 </p>
+                <div class="price fs-1">131,000RS</div>
+                <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/wa1.jpeg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">WASHING MACHINE</h4>
+                <p class="card-text fs-4">Products » LG 14/10 Top Load Twin Tub Washing Machine TT14WAPG
+                  LG 14/10 Top Load Twin Tub Washing Machine TT14WAPG</p>
+                <div class="price fs-1">140,000RS</div>
+                <button onclick="myfunction()"  class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+          <img src="newarrival/1 (8).jpeg" alt="cakes" class="product-img" style="height:250px;">
+          <div class="description-overlay">
+              <h4 class="card-title">WASHING MACHINE</h4>
+              <p class="card-text fs-4">Samsung 16KG Top Load Washing Machine WA16CG6745BVSG
+                Samsung 16KG Top Load Washing Machine WA16CG6745BVSG</p>
+              <div class="price fs-1">225,000RS</div>
+              <button onclick="myfunction()"    class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+          <img src="newarrival/1 (9).jpeg" alt="cakes" class="product-img" style="height:250px;">
+          <div class="description-overlay">
+              <h4 class="card-title">WASHING MACHINE</h4>
+              <p class="card-text fs-4">Samsung 13 Kg Top Load Washing Machine WA13T5260W
+                Samsung 13 Kg Top Load Washing Machine WA13T5260W</p>
+              <div class="price fs-1">165,000RS</div>
+              <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+          <img src="washing/www.jpg_480Wx480H" alt="cakes" class="product-img" style="height:250px;">
+                  <div class="description-overlay">
+                      <h4 class="card-title">WASHING MACHINE</h4>
+                      <p class="card-text fs-4">DSW 231 FlP
+                        Twin Tub Washing Machine
+                        0
+                        Color : BLACK
+                        Motor Type : Induction
+                        Programs : 6</p>
+                      <div class="price fs-1">85,000RS</div>
+                      <button  onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/ref1.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">REFRIGERATORS</h4>
+                <p class="card-text fs-4">Samsung Bespoke 36 in. 28.6 cu. ft. Smart 4-Door Flex French Door  & Internal Water Dispenser - Fingerprint Resistant</p>
+                <div class="price fs-1">117,800RS</div>
+                <button  onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/ref2.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">REFRIGERATORS</h4>
+                <p class="card-text fs-4">Haier American Fridge Freezer 91cm Frost Free D Energy Black - HSW79F18DIPT</p>
+                <div class="price fs-1">148,000RS</div>
+                <button  onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/ref3.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">REFRIGERATORS</h4>
+                <p class="card-text fs-4">DAWLANCE CHROME DOUBLE DOOR REFRIGERATOR NON INVERTER Model 9149WB CHROME PC</p>
+                <div class="price fs-1">154,000RS</div>
+                <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class=" product-card">
+            <img src="newarrival/ref4.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">REFRIGERATORS</h4>
+                <p class="card-text fs-4">Haier HRF-398 TPB 14 Cubic Feet Refrigerator features e-control panel for a variety of cooling and temperature options</p>
+                <div class="price fs-1">124,000RS</div>
+                <button  onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/1 (4).jpeg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">OVEN</h4>
+                <p class="card-text fs-4">Dawlance DBG 21810 S
+                  Built-in Oven
+                  Oven Type : Dual Fuel
+                  Color of Product : Inox
+                  Display : Mechanical Ringer Timer - without Cut-off
+                  Control Panel</p>
+                <div class="price fs-1">113,999RS</div>
+                <button   onclick="myfunction()"  class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="newarrival/ov1.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">OVEN</h4>
+                <p class="card-text fs-4">Samsung Bespoke 6.3 Cu. Ft. Smart Slide-In Induction Range with AI Hub in Stainless Steel</p>
+                <div class="price fs-1">111,600RS</div>
+                <button onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+          <img src="newarrival/ov2.jpg" alt="cakes" class="product-img" style="height:250px;">
+          <div class="description-overlay">
+              <h4 class="card-title">OVEN</h4>
+              <p class="card-text fs-4">DAWLANCE MICROWAVE OVEN DW 297 GSS | At Fazal Sons | With Dawlance DW 297 GSS Microwave grilling food is no longer a challenge.</p>
+              <div class="price fs-1">32,000RS</div>
+              <button  onclick="myfunction()"   class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+        <div class="col-md-3 mt-2">
+          <div class="product-card">
+            <img src="smartphones/lap/oven11.jpg" alt="cakes" class="product-img" style="height:250px;">
+            <div class="description-overlay">
+                <h4 class="card-title">OVEN</h4>
+                <p class="card-text fs-4">MD-7
+                  Heating Microwave Oven
+                  Type : Microwave
+                  Capacity (lt) : 20
+                  Product Color : Black
+                  Control Panel  </p>
+                <div class="price fs-1">35,600RS</div>
+                <button onclick="myfunction()"    class="btn btn-primary mt-1" id="addToCartBtn">Add to cart</button>
+              </div>
+          </div>
+        </div>
+        
+        
+        
+          </div>
+          
+          </div>
+          </div>
+        
+         
+      </div>
+  </div>
+
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">LIBERTY ELECTRONICS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Product added to cart successfully.
+        </div>
+        <div class="modal-footer">
+          <a href="washingmachines.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button></a>
+          <a href="contact.html"><button type="button" class="btn btn-primary">For Home Delivery</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function myfunction()
+       {
+         
+          window.alert("Product added successfully");
+      }
+</script>
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+
+  
+ 
+<section class="footer">
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Liberty Electronics</h3>
+            <p>
+              Karachi <br>
+              Sindh <br>
+              Pakistan <br>
+            </p>
+            <strong>Phone:</strong>  +923353994794<br>
+            <strong>Email:</strong>Libertyelectronics@.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+           <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="newarrival.html">New Arrivalss</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+             </ul>
+          </div>
+
+
+
+         
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+           <ul>
+            <li><a href="refrigerators.html">Refrigerators</a></li>
+            <li><a href="washingmachines.html">Washing Machines</a></li>
+            <li><a href="smartphones.html">Smart Phones</a></li>
+            <li><a href="ovens.html">Ovens</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+           </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+           
+
+     <div class="socail-links mt-3">
+              <a href="https://www.facebook.com/TwitterInc/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.skype.com/en/"><i class="fa-brands fa-skype"></i></a>
+              <a href="https://pk.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Liberty Electronic </span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+</section>
+</body>
+</html>

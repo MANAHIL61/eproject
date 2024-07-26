@@ -1,0 +1,683 @@
+
+    
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WASHING MACHINE</title>
+      <link rel="stylesheet" href="smartphone.css">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+H2O5Xr0Xo51PQe7fWSMIIZ+D6yzfLMlEyLZyNBpjV4+fmjhX1sVaXJjlw" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <img src="sign.png" alt="" width="60px" height="40px">
+        <a class="navbar-brand" href="home.html" id="logo"><span id="span1">LIBERTY ELECTRONICS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="./images/menu.png" alt="" width="30px"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Product</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" style="background-color: aliceblue;" aria-labelledby="navbarDropdown" >
+                <li><a class="dropdown-item" href="refrigerators.html">Refrigerators</a></li>
+                  <li><a class="dropdown-item" href="washingmachines.html">Washing Machines</a></li>
+                  <li><a class="dropdown-item" href="smartphones.html">Samrt Phone</a></li>
+                  <li><a class="dropdown-item" href="ovens.html">Ovens</a></li>
+                  <li><a class="dropdown-item" href="laptops.html">Laptops</a></li>
+                 
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="newarrival.html" style="color: yellow;">New Arrivals</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        
+        </div>  
+        <a href="home.html">
+          <i class="fa-solid fa-house" id="icon"></i>
+        </a>
+        
+        <a href="contact.html">
+          <i class="fa-solid fa-phone" id="icon"></i>
+        </a>
+        
+        <a href="products.html">
+          <i class="fa-solid fa-cart-shopping" id="icon" style="margin-top: 2px;"></i>
+        </a>
+        
+      </div>
+    </nav>
+
+
+
+
+
+
+   
+
+
+    <style>
+
+      .mask {
+        background-repeat: no-repeat;
+        border: 2px solid rgb(201, 192, 192);
+        background-size: cover;
+      }
+    
+
+      @media (max-width: 576px) {
+        .mask {
+          height: 200px; 
+        }
+      }
+    
+    
+      @media (min-width: 577px) and (max-width: 768px) {
+        .mask {
+          height: 250px;
+        }
+      }
+    
+      @media (min-width: 769px) and (max-width: 992px) {
+        .mask {
+          height: 300px; 
+        }
+      }
+    
+
+      @media (min-width: 993px) {
+        .mask {
+          height: 350px; 
+        }
+      }
+
+
+      .btn-real{
+   background-color:  #505077;
+   color: white;
+  }
+    </style>
+      
+      <style>
+        #icon{
+           color: white;
+           margin-left:20px;
+           text-align: right;
+           font-size: 24px;
+          
+         }
+       
+         #head{
+      
+      font-weight: 700;
+      color: #3e3ea1;
+      text-shadow: 1px 1px 1px black;
+         }
+
+         #footer .copyright{
+text-align: center;
+}
+ 
+
+     </style>
+     
+    
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="mask" style="background-image: url('washing/save.jpg'); background-color: rgb(255, 255, 255);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+       
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="mask" style="background-image: url('washing/save2.jpg'); background-color: rgba(255, 243, 243, 0.945);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+  
+    <div id="Haier" class="container-fluid" id="product-cards">
+    
+      <h1 class="text-center mt-5 fs-2"  id="head">Effortless and Cleanliness Guaranteed!</h1>
+      <hr>
+      <div class="row" style="margin-top: 30px;" >
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1233332.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DWT 1471 FLP
+                Top Load Washing Machine
+                0
+                Color : BLUE
+                Motor Type : Induction
+                Programs : 6</h3>
+              <p class="text-center"><div class="price" style="color: black;">22,500RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/www.jpg_480Wx480H" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DSW 231 FlP
+                Twin Tub Washing Machine
+                0
+                Color : BLACK
+                Motor Type : Induction
+                Programs : 6</h3>
+              <p class="text-center"><div class="price" style="color: black;">18,700RS</div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (10).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6"> 
+             Single Tub Washing Machine WHTTE
+        
+                </h3>
+              <p class="text-center"><div class="price" style="color: black;">25,000RS </div></p>
+              
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/waa2.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DST 2301 FLP
+                Twin Tub Washing Machine
+                0
+                Color : WHITE
+                Motor Type : Induction
+                Programs : 5</h3>
+              <p class="text-center"><div class="price" style="color: black;">22,000RS </div> </p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/wa3.jpg"alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DWT 2376 FLP
+                Top Load Washing Machine
+                0
+                Color : Silver
+                Motor Type : Induction
+                Programs : 8</h3>
+              <p class="text-center"><div class="price" style="color: black;">14,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (14).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DWT 3461 FLP
+                Single Tub  Washing Machine
+                0
+                Color : Black
+                Motor Type : Induction
+                Programs : 6</h3>
+              <p class="text-center"><div class="price" style="color: black;">15,960RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/wa7.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DWT 1471 FLP
+                Top Load Washing Machine
+                0
+                Color : RED
+                Motor Type : Induction
+                Programs : 6 PAWM 1100 Washing Machine Automatic (AVAILABLE IN 7 MORE COLORS)</h3>
+              <p class="text-center"><div class="price" style="color: black;">17,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/idhar.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DWT 1471 FLP
+                Top Load Washing Machine
+                0
+                Color : Silver
+                Motor Type : Induction
+                Programs : 6
+                </h3>
+              <p class="text-center"><div class="price" style="color: black;">19,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (17).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">DWT 2381 FLP
+                Top Load Washing Machine
+                0
+                Color : Silver
+                Motor Type : Induction
+                Programs : 6</h3>
+              <p class="text-center"><div class="price" style="color: black;">21,800RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/wa4.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">TYE 1171 FLP
+                Top Load Washing Machine
+                0
+                Color : Blue
+                Motor Type : Induction
+                Programs : 2 </h3>
+              <p class="text-center"><div class="price" style="color: black;">17,900RS </div> </p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (18).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">SWE 4761 FLP
+                Top Load Washing Machine
+                0
+                Color : White
+                Motor Type : Induction
+                Programs : 6</h3>
+              <p class="text-center"><div class="price" style="color: black;">18,800RS </div></p>
+                <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/wa5.jpg"alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">EWY 341 FLP
+                Single tub Top load Washing Machine
+                0 
+                Best in Quality 3 Years Warranty
+                Color : Black
+                Motor Type : Induction
+                Programs : 5</h3>
+              <p class="text-center"><div class="price" style="color: black;">17,600RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/wa6.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">ESWT 1341 FLP
+                Single tub Washing Machine
+                0
+                Color : Black
+                Motor Type : Induction
+                Programs : 7 </h3>
+              <p class="text-center"><div class="price" style="color: black;">18,400RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/12345.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">WYE34 FIE
+                Top Load Washing Machine
+                0
+                Color : White
+                Motor Type : Induction
+                Programs : 4
+             </h3>
+              <p class="text-center"><div class="price" style="color: black;">23,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1234.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">QWT 3445 FLP
+                Top Load Washing Machine
+                0
+                Color : Blue
+                Motor Type : Induction
+                Programs : 6 </h3>
+              <p class=><div class="price" style="color: black;">126,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (21).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">IWS 571 FLP
+                Top Load Washing Machine
+                0
+                Color : Brown
+                Motor Type : Induction
+                Programs : 6 </h3>
+              <p class="text-center"><div class="price" style="color: black;">18,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/waa.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">JESW 345FLP
+                
+                
+                WHITE
+                Motor Type : Induction
+                </h3>
+              </h3>
+              <p class="text-center"><div class="price" style="color: black;">17,500RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+  
+         
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (23).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">ERY 6577 FLP
+                Top Load Washing Machine
+                0
+                Color : Silver
+                Motor Type : Induction
+                Programs : 6  </h3>
+              </h3>
+              <p class="text-center"><div class="price" style="color: black;">22,000RS</div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (5).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">QWT 14561 FLP
+                Top Load Washing Machine
+                0
+                Color : White
+                Motor Type : Induction
+                Programs : 5 </h3>
+              <p class="text-center"><div class="price" style="color: black;">19,500RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/11111.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">
+                DWT 1471 FLP
+                Top Load Washing Machine
+                0
+                Color : Silver
+                Motor Type : Induction
+                Programs : 6 
+           </h3>
+              <p class="text-center"><div class="price" style="color: black;">22,000RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1 (6).jpeg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">TYRW 753327671 FLP
+                Top Load Washing Machine
+                Top Quality 
+                Color Silver Available in 6 more colors
+                Motor Type : Induction
+                Programs : 6 </h3>
+              <p class="text-center"><div class="price" style="color: black;">24,800RS </div>
+               
+                </p> 
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real"  id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/1234567.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">HEWT 0971 FLP
+                Top Load Washing Machine
+                0
+                Color : White 
+                Motor Type : Induction
+                Programs : 7</h3>
+              <p class="text-center"> <div class="price" style="color: black;">25,600RS </div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/12345678..jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">URW 5171 FLP
+                Top load Washing Machine
+                0
+                Color : Silver
+                Motor Type : Induction
+                Programs : 6 </h3>
+               
+              <p class="text-center"><div class="price" style="color: black;">17,500RS</div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="washing/11222.jpg" alt="">
+            <div class="card-body">
+              <h3 class="text-center fs-6">QWE 456FLP
+                Single Washing Machine
+                
+                Color : dark blue
+                Motor Type : Induction
+                Programs : 4 </h3>
+              <p class="text-center"><div class="price" style="color: black;">16,700RS</div></p>
+              <h2><span><li class="fa-solid fa-cart-shopping"></li></span> <button class="btn btn-real" id="addToCartBtn">Add to cart</button></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">LIBERTY ELECTRONICS</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Product added to cart successfully.
+          </div>
+          <div class="modal-footer">
+            <a href="washingmachines.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button></a>
+            <a href="contact.html"><button type="button" class="btn btn-primary">For Home Delivery</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+    document.querySelectorAll('#addToCartBtn').forEach(function(button) {
+      button.addEventListener('click', function() {
+          $('#cartModal').modal('show');
+      });
+  });
+  </script>
+
+
+
+
+    <section class="footer">
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Liberty Electronics</h3>
+                <p>
+                  Karachi <br>
+                  Sindh <br>
+                  Pakistan <br>
+                </p>
+                <strong>Phone:</strong>  +923353994794 <br>
+                <strong>Email:</strong>Libertyelectronics@.com <br>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Usefull Links</h4>
+               <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="newarrival.html">New Arrivalss</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 </ul>
+              </div>
+    
+    
+    
+             
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+    
+               <ul>
+                <li><a href="refrigerators.html">Refrigerators</a></li>
+            <li><a href="washingmachines.html">Washing Machines</a></li>
+            <li><a href="smartphones.html">Smart Phones</a></li>
+            <li><a href="ovens.html">Ovens</a></li>
+            <li><a href="laptops.html">Laptops</a></li>
+               </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+               
+    
+         <div class="socail-links mt-3">
+                  <a href="https://www.facebook.com/TwitterInc/"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.skype.com/en/"><i class="fa-brands fa-skype"></i></a>
+                  <a href="https://pk.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+          <div class="copyright"  style="margin-left:350px;">
+            &copy; Copyright <strong><span> Liberty Electronic </span></strong>. All Rights Reserved
+          </div>
+        </div>
+      </footer>
+    </section>
+
+
+
+  </body>
+</html>
